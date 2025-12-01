@@ -1,0 +1,100 @@
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\appsettings.json
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\FacturacionZas.staticwebassets.endpoints.json
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\FacturacionZas.exe
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\FacturacionZas.deps.json
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\FacturacionZas.runtimeconfig.json
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\FacturacionZas.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\FacturacionZas.pdb
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\Npgsql.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\FacturacionZas.csproj.AssemblyReference.cache
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\FacturacionZas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\FacturacionZas.AssemblyInfoInputs.cache
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\FacturacionZas.AssemblyInfo.cs
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\FacturacionZas.csproj.CoreCompileInputs.cache
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\FacturacionZas.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\FacturacionZas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\scopedcss\bundle\FacturacionZas.styles.css
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\Facturac.EFE79D54.Up2Date
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\FacturacionZas.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\refint\FacturacionZas.dll
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\FacturacionZas.pdb
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\FacturacionZas.genruntimeconfig.cache
+C:\Users\Jairo Vega\Desktop\FacturacionZas\obj\Debug\net8.0\ref\FacturacionZas.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\appsettings.json
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\FacturacionZas.staticwebassets.endpoints.json
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\FacturacionZas.exe
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\FacturacionZas.deps.json
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\FacturacionZas.runtimeconfig.json
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\FacturacionZas.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\FacturacionZas.pdb
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\Npgsql.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\FacturacionZas.csproj.AssemblyReference.cache
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\FacturacionZas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\FacturacionZas.AssemblyInfoInputs.cache
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\FacturacionZas.AssemblyInfo.cs
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\FacturacionZas.csproj.CoreCompileInputs.cache
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\FacturacionZas.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\FacturacionZas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\scopedcss\bundle\FacturacionZas.styles.css
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\Facturac.EFE79D54.Up2Date
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\FacturacionZas.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\refint\FacturacionZas.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\FacturacionZas.pdb
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\FacturacionZas.genruntimeconfig.cache
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\ref\FacturacionZas.dll
