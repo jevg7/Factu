@@ -1,39 +1,68 @@
 import jsPDF from 'jspdf';
 import { Invoice } from '../types';
 
-function safeParseDate(value?: string | null): string {
-  if (!value) return '';
-  const d = new Date(value);
-  if (isNaN(d.getTime())) return '';
-  return d.toLocaleDateString('es-NI', {
-    day: '2-digit',
-    month: '2-digit',
-    year: 'numeric',
+
+function toDate(value?: string | Date | null): Date | null {
+  if (!value) return null;
+
+  if (value instanceof Date) {
+    return isNaN(value.getTime()) ? null : value;
+  }
+
+  // Intento estándar (ISO)
+  const iso = new Date(value);
+  if (!isNaN(iso.getTime())) return iso;
+
+  // Intento DD-MM-YYYY o DD/MM/YYYY
+  const clean = value.replace(/\//g, "-");
+  const parts = clean.split("-");
+  if (parts.length === 3) {
+    const [d, m, y] = parts.map(Number);
+    const parsed = new Date(y, m - 1, d);
+    return isNaN(parsed.getTime()) ? null : parsed;
+  }
+
+  return null;
+}
+
+function formatDate(value?: string | Date | null): string {
+  const d = toDate(value);
+  if (!d) return "—";
+
+  return d.toLocaleDateString("es-NI", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
   });
 }
 
-const safeFormatDate = (value?: string | null) => {
-  if (!value) return '—';
-  const d = new Date(value);
-  if (isNaN(d.getTime())) return '—';
-  return d.toLocaleDateString('es-NI', {
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit'
+function formatDateTime(value?: string | Date | null): string {
+  const d = toDate(value);
+  if (!d) return "—";
+
+  return d.toLocaleDateString("es-NI", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit"
   });
-};
+}
+
+/* ---------------------------------------------------------
+   GENERADOR PDF
+--------------------------------------------------------- */
 
 export function generateInvoicePDF(invoice: Invoice): void {
-  const fecha = safeParseDate(
-    (invoice as any).issuedAt ?? (invoice as any).date
-  );
+  const fechaFactura = formatDate(invoice.issuedAt ?? invoice.date);
+  const fechaCreacion = formatDateTime(invoice.createdAt);
+
   const doc = new jsPDF({
     orientation: 'portrait',
     unit: 'mm',
-    format: [80, 200] // Formato de recibo pequeño (80mm ancho)
+    format: [80, 200]
   });
 
-  // Configurar fuente
   doc.setFont('helvetica');
 
   let yPosition = 10;
@@ -41,57 +70,42 @@ export function generateInvoicePDF(invoice: Invoice): void {
   const leftMargin = 5;
   const rightMargin = 75;
 
-  // Título del establecimiento
+  // Encabezado del establecimiento
   doc.setFontSize(12);
-  doc.text('CLÍNICA MÉDICA', leftMargin, yPosition, { align: 'left' });
+  doc.text('CLÍNICA MÉDICA', leftMargin, yPosition);
   yPosition += lineHeight + 2;
 
   doc.setFontSize(8);
-  doc.text('Centro de Diagnóstico', leftMargin, yPosition);
-  yPosition += lineHeight;
-  doc.text('Tel: +1-555-CLINIC', leftMargin, yPosition);
-  yPosition += lineHeight;
-  doc.text('clinica@email.com', leftMargin, yPosition);
-  yPosition += lineHeight + 3;
+  doc.text('Centro de Diagnóstico', leftMargin, yPosition); yPosition += lineHeight;
+  doc.text('Tel: +1-555-CLINIC', leftMargin, yPosition); yPosition += lineHeight;
+  doc.text('clinica@email.com', leftMargin, yPosition); yPosition += lineHeight + 3;
 
-  // Línea separadora
   doc.line(leftMargin, yPosition, rightMargin, yPosition);
   yPosition += 3;
 
-  // Información de la factura
+  // Factura
   doc.setFontSize(9);
   doc.text(`FACTURA #${invoice.invoiceNumber}`, leftMargin, yPosition);
-  yPosition += lineHeight + 1;
+  yPosition += lineHeight;
 
-  const date = new Intl.DateTimeFormat('es-ES', {
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-    hour: '2-digit',
-    minute: '2-digit'
-  }).format(invoice.createdAt);
-
-  const fechaFact = safeFormatDate(invoice.issuedAt ?? invoice.date);
-
-  doc.text(`Fecha: ${fechaFact}`, leftMargin, yPosition);
+  doc.text(`Fecha factura: ${fechaFactura}`, leftMargin, yPosition);
+  yPosition += lineHeight;
 
   doc.setFontSize(7);
-  doc.text(`Fecha: ${date}`, leftMargin, yPosition);
+  doc.text(`Emitido: ${fechaCreacion}`, leftMargin, yPosition);
   yPosition += lineHeight + 2;
 
-  // Información del paciente
+  // Paciente
   doc.setFontSize(8);
   doc.text('PACIENTE:', leftMargin, yPosition);
   yPosition += lineHeight;
+
   const patientName = `${invoice.patient.firstName} ${invoice.patient.lastName}`;
-  doc.text(patientName, leftMargin, yPosition);
-  yPosition += lineHeight;
-  doc.text(invoice.patient.phone, leftMargin, yPosition);
-  yPosition += lineHeight;
+  doc.text(patientName, leftMargin, yPosition); yPosition += lineHeight;
+  doc.text(invoice.patient.phone, leftMargin, yPosition); yPosition += lineHeight;
   doc.text(`Género: ${invoice.patient.gender}`, leftMargin, yPosition);
   yPosition += lineHeight + 3;
 
-  // Línea separadora
   doc.line(leftMargin, yPosition, rightMargin, yPosition);
   yPosition += 3;
 
@@ -103,21 +117,21 @@ export function generateInvoicePDF(invoice: Invoice): void {
   doc.text('TOTAL', 68, yPosition);
   yPosition += lineHeight;
 
-  // Línea separadora
   doc.line(leftMargin, yPosition, rightMargin, yPosition);
   yPosition += 2;
 
-  // Lista de exámenes
+  // Items
   doc.setFontSize(6);
+
   invoice.items.forEach((item) => {
-    const examName = item.exam.name;
+    const examName = item.exam.name ?? "";
+
     if (examName.length > 25) {
-      // Dividir en líneas si es muy largo
       const words = examName.split(' ');
       let line1 = '';
       let line2 = '';
       let currentLength = 0;
-      
+
       for (const word of words) {
         if (currentLength + word.length + 1 <= 25) {
           line1 += (line1 ? ' ' : '') + word;
@@ -126,9 +140,10 @@ export function generateInvoicePDF(invoice: Invoice): void {
           line2 += (line2 ? ' ' : '') + word;
         }
       }
-      
+
       doc.text(line1, leftMargin, yPosition);
       yPosition += 3;
+
       if (line2) {
         doc.text(line2, leftMargin, yPosition);
         yPosition += 3;
@@ -149,15 +164,13 @@ export function generateInvoicePDF(invoice: Invoice): void {
   });
 
   yPosition += 2;
-  // Línea separadora
   doc.line(leftMargin, yPosition, rightMargin, yPosition);
   yPosition += 3;
 
   // Totales
   doc.setFontSize(7);
-  const subtotal = `$${invoice.subtotal.toFixed(2)}`;
   doc.text('Subtotal:', 45, yPosition);
-  doc.text(subtotal, 68, yPosition);
+  doc.text(`$${invoice.subtotal.toFixed(2)}`, 68, yPosition);
   yPosition += lineHeight;
 
   if (invoice.discount > 0) {
@@ -167,28 +180,24 @@ export function generateInvoicePDF(invoice: Invoice): void {
     yPosition += lineHeight;
   }
 
-  // Línea separadora antes del total
   doc.line(45, yPosition, rightMargin, yPosition);
   yPosition += 2;
 
-  // Total final
   doc.setFontSize(8);
-  const total = `$${invoice.total.toFixed(2)}`;
   doc.text('TOTAL:', 45, yPosition);
-  doc.text(total, 68, yPosition);
+  doc.text(`$${invoice.total.toFixed(2)}`, 68, yPosition);
   yPosition += lineHeight + 5;
 
-  // Línea separadora final
   doc.line(leftMargin, yPosition, rightMargin, yPosition);
   yPosition += 3;
 
-  // Mensaje de agradecimiento
+  // Mensaje final
   doc.setFontSize(6);
   doc.text('¡Gracias por su confianza!', leftMargin, yPosition);
   yPosition += 3;
   doc.text('Conserve este recibo', leftMargin, yPosition);
 
-  // Guardar el PDF
+  // Guardar
   const fileName = `Factura_${invoice.invoiceNumber}_${patientName.replace(/\s+/g, '_')}.pdf`;
   doc.save(fileName);
 }

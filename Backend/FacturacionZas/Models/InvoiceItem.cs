@@ -8,12 +8,12 @@ namespace FacturacionZas.Models
         public int Id { get; set; }
 
         public int InvoiceId { get; set; }
-
-        [JsonIgnore]
         public Invoice Invoice { get; set; } = null!;
 
-        public string ExamName { get; set; } = string.Empty;
+        public int ExamId { get; set; }     
+        public Exam Exam { get; set; } = null!; 
+
         public int Quantity { get; set; }
-        public decimal Price { get; set; }  
+        public decimal Price { get; set; }
     }
 }

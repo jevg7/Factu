@@ -130,7 +130,7 @@
   },
   {
     "ContainingType": "FacturacionZas.Controllers.InvoicesController",
-    "Method": "Create",
+    "Method": "CreateInvoice",
     "RelativePath": "api/Invoices",
     "HttpMethod": "POST",
     "IsController": true,
@@ -157,6 +157,32 @@
   {
     "ContainingType": "FacturacionZas.Controllers.InvoicesController",
     "Method": "GetById",
+    "RelativePath": "api/Invoices/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FacturacionZas.Models.Invoice",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FacturacionZas.Controllers.InvoicesController",
+    "Method": "GetInvoiceById",
     "RelativePath": "api/Invoices/{id}",
     "HttpMethod": "GET",
     "IsController": true,

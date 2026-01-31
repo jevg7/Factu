@@ -21,16 +21,21 @@ export interface CartItem {
   price: number;
   quantity: number;
 }
-
+export interface InvoiceItem {
+  id: number;
+  examId: number;
+  exam?: Exam;      // viene en GET /api/invoices/{id}
+  quantity: number;
+  price: number;
+}
 export interface Invoice {
-  id: string;
-  invoiceNumber: string; 
-  patient: Patient;
-  items: CartItem[];
-  subtotal: number;
+   id: number;
+  invoiceNumber: string;
+  createdAt: string;
   discount: number;
   total: number;
-  createdAt: string;
+  patient?: { firstName: string; lastName: string };
+  items: InvoiceItem[];
 }
 
 export interface BillingState {

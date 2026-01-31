@@ -4,15 +4,17 @@ namespace FacturacionZas.Models
 {
     public class CreateInvoiceItemDto
     {
-        public string ExamName { get; set; } = string.Empty;
+        public int ExamId { get; set; }          
         public int Quantity { get; set; }
-        public decimal Price { get; set; }   // precio unitario
+        public decimal? Price { get; set; }      
     }
 
     public class CreateInvoiceDto
     {
         public int PatientId { get; set; }
-        public decimal Discount { get; set; }   // porcentaje 0–100
+        public decimal Discount { get; set; }   
         public List<CreateInvoiceItemDto> Items { get; set; } = new();
     }
 }
+
+

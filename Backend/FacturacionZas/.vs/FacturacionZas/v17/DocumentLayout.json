@@ -7,32 +7,24 @@
       "RelativeMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|c:\\users\\jairo vega\\desktop\\billing interface design\\backend\\facturacionzas\\controllers\\examscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|solutionrelative:controllers\\examscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|c:\\users\\jairo vega\\desktop\\billing interface design\\backend\\facturacionzas\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|c:\\users\\jairo vega\\desktop\\billing interface design\\backend\\facturacionzas\\controllers\\invoicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|solutionrelative:controllers\\invoicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|c:\\users\\jairo vega\\desktop\\billing interface design\\backend\\facturacionzas\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|solutionrelative:controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|c:\\users\\jairo vega\\desktop\\billing interface design\\backend\\facturacionzas\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|c:\\users\\jairo vega\\desktop\\billing interface design\\backend\\facturacionzas\\models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|solutionrelative:models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|c:\\users\\jairo vega\\desktop\\billing interface design\\backend\\facturacionzas\\models\\createinvoiceitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|solutionrelative:models\\createinvoiceitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|c:\\users\\jairo vega\\desktop\\billing interface design\\backend\\facturacionzas\\models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|solutionrelative:models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|c:\\users\\jairo vega\\desktop\\billing interface design\\backend\\facturacionzas\\models\\examdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|solutionrelative:models\\examdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|c:\\users\\jairo vega\\desktop\\billing interface design\\backend\\facturacionzas\\controllers\\examscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|solutionrelative:controllers\\examscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|c:\\users\\jairo vega\\desktop\\billing interface design\\backend\\facturacionzas\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,6 +33,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|c:\\users\\jairo vega\\desktop\\billing interface design\\backend\\facturacionzas\\models\\invoiceitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|solutionrelative:models\\invoiceitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|c:\\users\\jairo vega\\desktop\\billing interface design\\backend\\facturacionzas\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|solutionrelative:controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|c:\\users\\jairo vega\\desktop\\billing interface design\\backend\\facturacionzas\\models\\examdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|solutionrelative:models\\examdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A9F3F16-C105-4EAC-97DD-CE3E8821BD44}|FacturacionZas.csproj|c:\\users\\jairo vega\\desktop\\billing interface design\\backend\\facturacionzas\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,20 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateInvoiceItemDto.cs",
-              "DocumentMoniker": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Models\\CreateInvoiceItemDto.cs",
-              "RelativeDocumentMoniker": "Models\\CreateInvoiceItemDto.cs",
-              "ToolTip": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Models\\CreateInvoiceItemDto.cs",
-              "RelativeToolTip": "Models\\CreateInvoiceItemDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T09:13:18.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "Invoice.cs",
               "DocumentMoniker": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Models\\Invoice.cs",
               "RelativeDocumentMoniker": "Models\\Invoice.cs",
@@ -87,64 +74,36 @@
               "RelativeToolTip": "Models\\Invoice.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T09:11:26.766Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T09:11:26.766Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "InvoiceItem.cs",
               "DocumentMoniker": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Models\\InvoiceItem.cs",
               "RelativeDocumentMoniker": "Models\\InvoiceItem.cs",
               "ToolTip": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Models\\InvoiceItem.cs",
               "RelativeToolTip": "Models\\InvoiceItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T09:10:58.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T09:10:58.858Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Exam.cs",
-              "DocumentMoniker": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Models\\Exam.cs",
-              "RelativeDocumentMoniker": "Models\\Exam.cs",
-              "ToolTip": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Models\\Exam.cs",
-              "RelativeToolTip": "Models\\Exam.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T09:02:13.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PatientsController.cs",
-              "DocumentMoniker": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Controllers\\PatientsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PatientsController.cs",
-              "ToolTip": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Controllers\\PatientsController.cs",
-              "RelativeToolTip": "Controllers\\PatientsController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAcwA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T08:24:42.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Data\\AppDbContext.cs",
               "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-01T08:22:41.49Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ExamDtos.cs",
               "DocumentMoniker": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Models\\ExamDtos.cs",
               "RelativeDocumentMoniker": "Models\\ExamDtos.cs",
@@ -152,8 +111,7 @@
               "RelativeToolTip": "Models\\ExamDtos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T09:49:14.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T09:49:14.52Z"
             },
             {
               "$type": "Document",
@@ -163,14 +121,50 @@
               "RelativeDocumentMoniker": "Controllers\\InvoicesController.cs",
               "ToolTip": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Controllers\\InvoicesController.cs",
               "RelativeToolTip": "Controllers\\InvoicesController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAIwFUAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-01T09:13:37.296Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Exam.cs",
+              "DocumentMoniker": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Models\\Exam.cs",
+              "RelativeDocumentMoniker": "Models\\Exam.cs",
+              "ToolTip": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Models\\Exam.cs",
+              "RelativeToolTip": "Models\\Exam.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T09:02:13.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateInvoiceItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Models\\CreateInvoiceItemDto.cs",
+              "RelativeDocumentMoniker": "Models\\CreateInvoiceItemDto.cs",
+              "ToolTip": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Models\\CreateInvoiceItemDto.cs",
+              "RelativeToolTip": "Models\\CreateInvoiceItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T01:11:03.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PatientsController.cs",
+              "DocumentMoniker": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Controllers\\PatientsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PatientsController.cs",
+              "ToolTip": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Controllers\\PatientsController.cs",
+              "RelativeToolTip": "Controllers\\PatientsController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAcwA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T08:24:42.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ExamsController.cs",
               "DocumentMoniker": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Controllers\\ExamsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ExamsController.cs",
@@ -178,8 +172,7 @@
               "RelativeToolTip": "Controllers\\ExamsController.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAAcwE0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T09:04:09.063Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T09:04:09.063Z"
             },
             {
               "$type": "Document",
@@ -189,7 +182,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Jairo Vega\\Desktop\\Billing Interface Design\\Backend\\FacturacionZas\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-01T08:23:21.595Z",
               "EditorCaption": ""
@@ -204,8 +197,7 @@
               "RelativeToolTip": "Models\\Patient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T08:23:07.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T08:23:07.463Z"
             },
             {
               "$type": "Document",

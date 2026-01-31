@@ -9,6 +9,7 @@ import { generateInvoicePDF } from './utils/pdfGenerator';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
 import { toast } from 'sonner@2.0.3';
 import { Toaster } from './components/ui/sonner';
+import { fetchInvoiceById } from './components/InvoiceHistory';
 
 // 👇 Usa aquí el mismo puerto que Swagger (https://localhost:XXXX/swagger)
 const API_BASE_URL = 'https://localhost:7087';
@@ -219,11 +220,12 @@ export default function App() {
 
     const patient = billingState.selectedPatient;
 
-    const items = billingState.cart.map(item => ({
-      examName: item.exam.name,
-      quantity: item.quantity,
-      price: item.price
-    }));
+    const items = billingState.cart.map((item) => ({
+  examId: item.exam.id,       // ✅
+  quantity: item.quantity,
+  price: item.price,
+}));
+
 
     const payload = {
       patientId: patient.id,
@@ -273,15 +275,19 @@ export default function App() {
   };
 
   // Descargar / volver a generar PDF de una factura existente
-  const handleDownloadInvoice = (invoice: Invoice) => {
-    try {
-      generateInvoicePDF(invoice);
-      toast.success('Factura exportada como PDF');
-    } catch (error) {
-      console.error(error);
-      toast.error('Error al generar el PDF de la factura');
-    }
-  };
+  const handleDownloadInvoice = async (invoice: Invoice) => {
+  try {
+    const freshInvoice = await fetchInvoiceById(invoice.id);
+
+    // aquí ya viene item.exam.name desde la BD
+    generateInvoicePDF(freshInvoice);
+
+    toast.success("Factura exportada como PDF");
+  } catch (e) {
+    console.error(e);
+    toast.error("Error al generar el PDF de la factura");
+  }
+};
 
   // ==========================
   //  Render

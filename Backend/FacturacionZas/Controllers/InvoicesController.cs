@@ -13,18 +13,18 @@ namespace FacturacionZas.Controllers
     [Route("api/[controller]")]
     public class InvoicesController : ControllerBase
     {
-        private readonly AppDbContext _db;
+        private readonly AppDbContext _context;
 
-        public InvoicesController(AppDbContext db)
+        public InvoicesController(AppDbContext context)
         {
-            _db = db;
+            _context = context;
         }
 
-        
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Invoice>>> GetAll()
         {
-            var invoices = await _db.Invoices
+            var invoices = await _context.Invoices
                 .Include(i => i.Patient)
                 .Include(i => i.Items)
                 .OrderByDescending(i => i.CreatedAt)
@@ -37,7 +37,7 @@ namespace FacturacionZas.Controllers
         [HttpGet("{id:int}")]
         public async Task<ActionResult<Invoice>> GetById(int id)
         {
-            var invoice = await _db.Invoices
+            var invoice = await _context.Invoices
                 .Include(i => i.Patient)
                 .Include(i => i.Items)
                 .FirstOrDefaultAsync(i => i.Id == id);
@@ -48,46 +48,78 @@ namespace FacturacionZas.Controllers
             return Ok(invoice);
         }
 
-       
+
         [HttpPost]
-        public async Task<ActionResult<Invoice>> Create([FromBody] CreateInvoiceDto dto)
+        public async Task<ActionResult<Invoice>> CreateInvoice([FromBody] CreateInvoiceDto dto)
         {
-            var patient = await _db.Patients.FindAsync(dto.PatientId);
-            if (patient == null)
-                return BadRequest("El paciente no existe.");
-
             if (dto.Items == null || dto.Items.Count == 0)
-                return BadRequest("La factura debe tener al menos un examen.");
+                return BadRequest("Debe incluir al menos 1 item.");
 
-            var subtotal = dto.Items.Sum(i => i.Price * i.Quantity);
-            var discountAmount = subtotal * dto.Discount / 100m;
-            var total = subtotal - discountAmount;
+            // Traer exámenes en batch (más eficiente)
+            var examIds = dto.Items.Select(x => x.ExamId).Distinct().ToList();
+            var exams = await _context.Exams
+                .Where(e => examIds.Contains(e.Id))
+                .ToDictionaryAsync(e => e.Id);
+
+            // Validar que existan
+            foreach (var id in examIds)
+                if (!exams.ContainsKey(id))
+                    return BadRequest($"ExamId inválido: {id}");
 
             var invoice = new Invoice
             {
                 PatientId = dto.PatientId,
-                Patient = patient,
-                InvoiceNumber = $"INV-{DateTime.UtcNow:yyyyMMddHHmmss}",
-                Subtotal = subtotal,
                 Discount = dto.Discount,
-                Total = total,
                 CreatedAt = DateTime.UtcNow,
-                Items = dto.Items.Select(i => new InvoiceItem
-                {
-                    ExamName = i.ExamName,
-                    Quantity = i.Quantity,
-                    Price = i.Price
-                }).ToList()
+                Items = new List<InvoiceItem>()
             };
 
-            _db.Invoices.Add(invoice);
-            await _db.SaveChangesAsync();
+            foreach (var it in dto.Items)
+            {
+                var exam = exams[it.ExamId];
 
-            
-            await _db.Entry(invoice).Reference(i => i.Patient).LoadAsync();
-            await _db.Entry(invoice).Collection(i => i.Items).LoadAsync();
+                
+                var unitPrice = it.Price ?? exam.BasePrice;
 
-            return CreatedAtAction(nameof(GetById), new { id = invoice.Id }, invoice);
+               
+
+                invoice.Items.Add(new InvoiceItem
+                {
+                    ExamId = it.ExamId,
+                    Quantity = it.Quantity,
+                    Price = unitPrice
+                });
+            }
+
+            // Totales
+            invoice.Subtotal = invoice.Items.Sum(x => x.Price * x.Quantity);
+            var discountAmount = invoice.Subtotal * (invoice.Discount / 100m);
+            invoice.Total = invoice.Subtotal - discountAmount;
+
+            _context.Invoices.Add(invoice);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetInvoiceById), new { id = invoice.Id }, invoice);
         }
+
+
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Invoice>> GetInvoiceById(int id)
+        {
+            var inv = await _context.Invoices
+                .AsNoTracking()
+                .Include(i => i.Patient)
+                .Include(i => i.Items)
+                    .ThenInclude(ii => ii.Exam)
+                .FirstOrDefaultAsync(i => i.Id == id);
+
+            if (inv == null) return NotFound();
+            return inv;
+        }
+
+
+
+
     }
 }

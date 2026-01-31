@@ -46,7 +46,7 @@ export function BillingCart({
   const formatCurrency = (amount: number) => {
     return new Intl.NumberFormat('es-ES', {
       style: 'currency',
-      currency: 'USD'
+      currency: 'NIO'
     }).format(amount);
   };
 

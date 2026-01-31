@@ -98,3 +98,4 @@ C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\
 C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\FacturacionZas.pdb
 C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\FacturacionZas.genruntimeconfig.cache
 C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\ref\FacturacionZas.dll
+C:\Users\Jairo Vega\Desktop\Billing Interface Design\Backend\FacturacionZas\obj\Debug\net8.0\FacturacionZas.sourcelink.json

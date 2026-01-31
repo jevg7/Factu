@@ -26,11 +26,18 @@ namespace FacturacionZas.Data
                 .HasForeignKey(i => i.PatientId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            // Relación Invoice -> Items (uno a muchos)
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<InvoiceItem>()
+                .HasOne(ii => ii.Exam)
+                .WithMany()
+                .HasForeignKey(ii => ii.ExamId)
+                .OnDelete(DeleteBehavior.Restrict);
+
             modelBuilder.Entity<InvoiceItem>()
                 .HasOne(ii => ii.Invoice)
                 .WithMany(i => i.Items)
-                .HasForeignKey(ii => ii.InvoiceId);
+                .HasForeignKey(ii => ii.InvoiceId); ;
 
             
             modelBuilder.Entity<Invoice>()
